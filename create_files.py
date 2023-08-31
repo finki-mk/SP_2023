@@ -43,4 +43,4 @@ for source_folder in source_folders:
 # shutil.copy2("src/img", "output/img")
 shutil.copytree("src/img", "output/output_html/img")
 # shutil.copy2("style.css", "output/output_html/mk/style.css")
-shutil.copy2("style.css", "output/output_html/en/style.css")
+# shutil.copy2("style.css", "output/output_html/en/style.css")
