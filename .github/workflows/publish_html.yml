@@ -84,7 +84,7 @@ jobs:
           pip install pypandoc
 
       - name: Install xelatex
-        run: sudo apt-get install -y texlive-xetex  # Install xelatex
+        run: sudo apt-get update&&sudo apt-get install -y texlive-xetex  # Install xelatex
 
       - name: Run create_files.py
         run: python create_files.py  # Convert MD to HTML and PDFs using pypandoc
