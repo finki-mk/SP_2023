@@ -6,7 +6,7 @@ def generate_index(html_files_directory):
 
 	html_files = [filename for filename in os.listdir(html_files_directory) if
 	              filename.endswith('.html') and not filename.startswith("index")]
-	html_files.sort()  # Sort the filenames numerically
+	html_files.sort(key=lambda el : int(el.split(".")[0]))  # Sort the filenames numerically
 
 	index_content = '<html>\n<head>\n<meta charset="utf-8" />\n<title>Index</title>\n<link rel="stylesheet" href="style.css" />\n</head>\n<body>\n'
 	index_content += '<img src="../img/logo_mk.png">'
